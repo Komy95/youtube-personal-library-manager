@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "youtube-personal-library-manager"
+version = "0.1.0"
+description = "Local YouTube playlist inventory and explicitly approved reorganization"
+license = "MIT"
+license-files = ["LICENSE"]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "typer>=0.12,<1",
+    "pydantic>=2,<3",
+    "google-api-python-client>=2,<3",
+    "google-auth-oauthlib>=1.2,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<10",
+]
+
+[tool.setuptools.packages.find]
+include = ["youtube_manager*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

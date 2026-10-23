@@ -1,0 +1,57 @@
+# Local account artifacts must stay outside the checkout.
+# Ignore rules affect untracked files only, do not cover arbitrary names,
+# and do not untrack committed files. Explicitly review staged paths.
+
+# Assistant/index/test state
+.aider*
+.codegraph/
+.pytest-work*/
+.pytest_cache/
+
+# YouTube / OAuth account artifacts
+token.json
+write_token.json
+*_token.json
+*.token.json
+credentials.json
+*.credentials.json
+client_secret*.json
+
+# Local databases
+*.sqlite3
+*.sqlite
+*.db
+*.sqlite3-*
+*.db-*
+*.sqlite-*
+
+# Python caches / builds
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Environments
+.env
+.env.*
+.venv/
+venv/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Dedicated local account-data directories
+/data/
+/private/
+/exports/
+/evidence/
+/backups/
+/plans/
+/receipts/
+
+# Local logs / bundles
+*.log
+*.bundle
