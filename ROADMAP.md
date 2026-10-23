@@ -60,8 +60,11 @@ or acceptance of every live operation. No user's account approval transfers.
 - [x] Exact staged tree and wheel scans: no secret findings. Built wheel declares
   MIT and includes LICENSE; installation, imports outside the checkout, CLI help
   and dependency consistency passed. Runtime source/tests are unchanged.
-- [ ] Verify the sanitized candidate tree, package artifacts and replacement
-  remote history before completing this package; see the audit report.
+- [x] Verify sanitized remote distribution: a fresh clone contained only the
+  clean root history, and both history/file scans found no secrets. The replacement
+  has a distinct GitHub identity, MIT detection and private visibility; the
+  original remains a separately named private, read-only archive. A pre-cleanup
+  commit returns HTTP 404 in the replacement. See the audit report.
 
 ## Remaining release work
 

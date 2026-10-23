@@ -19,7 +19,8 @@ Updated 2026-10-24. Repository remains private. Source license: [MIT](../LICENSE
 - [x] Add security reporting and contribution/support guidance.
 - [x] Strengthen ignore rules and separately inspect intended tracked paths.
 - [x] Scan original reachable history with Gitleaks 8.30.1; no secret findings.
-- [ ] Scan the final tree/artifacts and verify sanitized remote history.
+- [x] Scan the candidate tree/artifact and fresh remote clone/history with no
+  secret findings; verify MIT metadata and private replacement/archive identities.
 
 ## M2 — Human onboarding
 

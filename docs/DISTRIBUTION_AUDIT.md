@@ -31,8 +31,18 @@ The exact staged candidate tree (approximately 370 KB) and extracted wheel
 (approximately 124 KB) passed local Gitleaks scans with no findings. The wheel
 contains `License-Expression: MIT`, declares and includes the identical root
 LICENSE, and omits the unrelated utilities. Wheel installation and CLI/dependency
-checks are recorded in the release checklist. Sanitized remote-history
-verification is pending. This report is not publication or account-write approval.
+checks passed outside the source checkout; `pip check` found no broken
+requirements. Full offline suite after cleanup: **276 passed, 2 skipped in 7.74s**.
+Runtime source/tests were unchanged. All 47 tracked candidate paths were inspected;
+ignore-rule probes and 69 relative Markdown links/anchors passed.
+
+The clean replacement was uploaded and cloned afresh from GitHub. It had a
+single sanitized root and only `main`; Gitleaks scanned that history and its
+files with no findings. GitHub reports a distinct repository identity, private
+visibility and MIT license detection. The original is a separately named private,
+read-only archive. A pre-cleanup commit returned HTTP 404 in the replacement.
+Follow-up audit-summary commits contain generic verification records only.
+This report is not publication or account-write approval.
 
 ## Retention boundary
 
