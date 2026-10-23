@@ -20,7 +20,7 @@ $ymPython = (Resolve-Path .\.venv\Scripts\python.exe).Path
 & $ymPython -m youtube_manager --help
 ```
 
-No environment activation, AI provider, CodeGraph, or worker service is needed.
+No environment activation, AI provider, or extra agent service is needed.
 Optional alternative: `uv venv --python 3.12 .venv`, then
 `uv pip install --python .venv/Scripts/python.exe -e .`.
 

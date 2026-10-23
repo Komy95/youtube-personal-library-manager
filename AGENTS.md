@@ -22,18 +22,3 @@ Human instructions are in [docs/SETUP.md](docs/SETUP.md) and
   there is no model-server integration or automatic analysis command.
 - Never invent content facts from metadata. Quotes must cite stored evidence;
   categories remain proposals. Label metadata-based organization suggestions as such.
-
-## Change the repository
-
-Read and preserve [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md), including existing
-Codex/DeepSeek authoring roles, sanitized delegation boundaries and verification.
-Those contributor tools are not requirements for end-user operation.
-
-Prefer CodeGraph for structural exploration and `rg` for literal text. Do not
-repeat indexed exploration in workers. Initialize an absent index only with user
-approval; sync an existing one when needed. Ignore `.codegraph/` in Git.
-
-After each work package, update `ROADMAP.md` and the public-release checklist when
-relevant. Mark only verified results complete; distinguish synthetic, installed,
-clean-machine, agent and live-account acceptance. Publication requires approval of
-the concrete reviewed release. No account mutation is authorized by documentation work.

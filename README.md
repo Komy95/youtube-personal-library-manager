@@ -57,13 +57,10 @@ whole-playlist deletion are outside the current CLI workflow.
 Read-only is the default. Credentials and inventory stay outside the repo;
 account changes require separate write authorization and a reviewed plan.
 
-## Small project, open to contributions
+## Small project, shared as-is
 
-Shared as-is for people who find it useful. Current verification is on
-Windows/Python 3.12: **276 tests passed, 2 platform skips**, plus package-install
-checks. Other environments and independent-user setups are not yet verified.
-Feedback, fixes and reports from other setups are welcome; broad platform
-certification is not promised. The repository is currently private.
+For people who find it useful. Windows/Python 3.12 is the current usage
+environment; other setups are not yet verified. Feedback and fixes are welcome.
+The repository is currently private.
 
-[MIT license](LICENSE) · [Contributing](CONTRIBUTING.md) ·
-[Security](SECURITY.md) · [Roadmap](ROADMAP.md)
+[MIT license](LICENSE) · [Security](SECURITY.md)

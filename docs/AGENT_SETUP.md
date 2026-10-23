@@ -34,17 +34,14 @@ the same provider, data scope and purpose.
 - Configure `YOUTUBE_MANAGER_DATA_DIR` and `YOUTUBE_MANAGER_CLIENT_SECRETS` for
   the human's chosen locations. Use one data directory per channel. Pass any
   `--data-dir` before the subcommand; otherwise use the configured environment.
-- Product operation needs neither DeepSeek nor CodeGraph. Contributor-specific
-  tooling rules apply only when actually changing code; see [Development](DEVELOPMENT.md).
 
 ## 2. Verify without account access
 
 Use the environment's Python explicitly for `-m pip` and `-m youtube_manager`.
 Check root help and content/analysis/plan/migration help. Run the
 [synthetic walkthrough](EXAMPLE_WORKFLOW.md); it never uses the real inventory.
-For full offline tests, install `.[dev]` and run `python -m pytest -q -rs`.
-Auth tests deliberately require temporary data outside the checkout; do not
-disable the security guard to accommodate a restricted filesystem.
+Do not use the real account as a test fixture or disable credential/data path
+protections to accommodate a restricted filesystem.
 
 Report platform and checks accurately. A local virtual-environment install is
 not clean-machine acceptance; a Windows run is not evidence of POSIX permissions.
@@ -170,7 +167,5 @@ files. Do not commit them. No automatic remote rollback or whole-playlist deleti
 workflow exists. The CLI also has no general rename/reorder interface despite
 lower-level operation support.
 
-For repository work, update the relevant roadmap with verified results, leaving
-clean-machine, live-account and cross-platform acceptance open unless exercised.
 Agent instructions define expected behavior; they cannot establish that a fresh
 independent agent has actually completed onboarding.
