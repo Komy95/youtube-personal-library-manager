@@ -8,7 +8,6 @@ below are provided but have not been verified on those systems.
 
 Install [Python 3.12+](https://www.python.org/downloads/) and
 [Git](https://git-scm.com/downloads). Python 3.12 is the currently tested version.
-The repository is currently private; cloning requires access from its owner.
 
 ```powershell
 git clone https://github.com/Komy95/youtube-personal-library-manager.git

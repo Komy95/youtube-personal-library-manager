@@ -3,7 +3,6 @@
 | Symptom | Action |
 |---|---|
 | Python/module not found | Use the virtual environment's Python from [Setup](SETUP.md); repeat its pip install. Python must be 3.12+. |
-| Clone denied | The repository is private. Ask its owner for GitHub access; never share a GitHub token in chat. |
 | Login denied | Check the selected Cloud project, enabled YouTube API, Desktop OAuth client and test-user account. Organization policy may need administrator action. |
 | Credentials/data inside repository | Move them outside the clone; reset the environment paths and retry. Do not disable path protection. |
 | Expired/revoked token | Re-run `auth` for read access; use `migration auth` with a valid approved plan for write access. |

@@ -61,6 +61,5 @@ account changes require separate write authorization and a reviewed plan.
 
 For people who find it useful. Windows/Python 3.12 is the current usage
 environment; other setups are not yet verified. Feedback and fixes are welcome.
-The repository is currently private.
 
 [MIT license](LICENSE) · [Security](SECURITY.md)
