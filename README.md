@@ -1,48 +1,69 @@
 # YouTube Personal Library Manager
 
-Run your own YouTube playlist manager locally with Python and your Google account.
-Inspect owned playlists, prepare explicit assignments, preview changes and execute
-only a plan you approve. No hosted service or model runtime is required.
+**Give your YouTube playlists a little more order.**
 
-**Private preparation:** cloning currently requires repository access. The code
-has offline coverage; independent new-user setup,
-CI and cross-platform acceptance remain open. Distribution cleanup and the
-license audit are recorded in [the audit report](docs/DISTRIBUTION_AUDIT.md).
+A small, local Python tool for exploring your playlists, finding overlap and
+turning a collection of saved videos into a structure that makes sense to you.
+Use it directly from the command line or let a coding agent help you plan.
 
-## Start here
+## What can you do?
 
-- **People:** [Setup](docs/SETUP.md) -> [Google login setup](docs/GOOGLE_OAUTH.md)
-  -> [Edit playlists](docs/EDITING.md).
-- **Agents:** use the starter prompt and workflow in [Agent setup](docs/AGENT_SETUP.md).
-- **Try without an account:** [Synthetic walkthrough](docs/EXAMPLE_WORKFLOW.md).
-- **Problems:** [Troubleshooting](docs/TROUBLESHOOTING.md).
+- **Explore your library.** See your owned playlists and their videos from a
+  local inventory, without fetching everything again for each question.
+- **Find duplicates and overlap.** Spot repeated entries within a playlist and
+  videos shared across playlists. Keep intentional overlap.
+- **Build topic playlists.** Map videos to new private playlists or add missing
+  videos to existing playlists you own.
+- **Preview a reorganization.** Inspect a saved plan before approving changes.
+  Reading and planning work without write access.
+- **Keep a local record.** Store inventory snapshots and export your library as JSON.
+- **Bring your own evidence.** Import transcripts or notes and validated analysis
+  JSON for evidence-grounded recipe/category proposals.
 
-Requirements: Git, Python 3.12+ and your own Google Cloud project with YouTube
-Data API v3 enabled. Windows/Python 3.12 is the current verification environment;
-macOS/Linux instructions are provided but not yet verified on those platforms.
+## Work with an agent
 
-## Scope and privacy
+Open the repo in your coding agent and use the
+[starter prompt](docs/AGENT_SETUP.md#starter-prompt). For example:
 
-Read-only access is the default. Credentials and inventory stay outside the
-repository. Editing requires separate write OAuth, a saved plan and approval of
-its full hash. Failed or uncertain writes must be reconciled, never blindly retried.
-AI assistance is optional; sharing private records with a provider needs your consent.
+> “Which of my playlists have the most overlap?”
+>
+> “Help me organize these videos into topic playlists.”
+>
+> “Show me the proposed changes before applying anything.”
 
-The CLI supports new private playlists, additions to owned targets and optional
-within-playlist duplicate removal. It does not expose general rename/reorder or
-whole-playlist deletion workflows. It does not edit video footage, retrieve all
-saved playlists/Watch Later/history, or download third-party transcripts.
+The agent uses the local gateway to inspect and plan. You handle Google login,
+choose what private data to share, and approve the exact changes to your account.
+No built-in AI service or local model installation is required.
 
-Optional [content evidence](docs/CONTENT_SOURCES.md) and analysis JSON import
-validate cited quotes locally. No automatic analysis/model-server integration exists.
+## Get started
 
-## Project records
+You'll need **Python 3.12+**, Git and your own Google Cloud OAuth credentials.
+Everything runs on your computer; there is no server to host.
 
-[Release roadmap](docs/PUBLIC_RELEASE_ROADMAP.md) ·
-[Detailed release plan](docs/OPEN_SOURCE_PLAN.md) ·
-[Development](docs/DEVELOPMENT.md) · [Project roadmap](ROADMAP.md) ·
-[MIT license](LICENSE) · [Security](SECURITY.md) · [Contributing](CONTRIBUTING.md)
+1. [Install and connect your account](docs/SETUP.md).
+2. [Explore and organize playlists](docs/EDITING.md).
+3. Prefer an agent? Follow the [agent guide](docs/AGENT_SETUP.md).
 
-Latest full offline suite: **276 passed, 2 skipped** in a fresh Windows/Python
-3.12.10 virtual environment (2026-10-24). Installation, CLI help and dependency
-consistency passed; independent new-user OAuth/agent acceptance remains open.
+You can also [try the synthetic walkthrough](docs/EXAMPLE_WORKFLOW.md) without
+connecting a Google account. [Troubleshooting](docs/TROUBLESHOOTING.md).
+
+## A few boundaries
+
+This works with **playlists owned by the connected channel**. It does not cover
+all saved third-party playlists, Watch Later or watch history, and it does not
+edit video footage or download transcripts. General rename/reorder controls and
+whole-playlist deletion are outside the current CLI workflow.
+
+Read-only is the default. Credentials and inventory stay outside the repo;
+account changes require separate write authorization and a reviewed plan.
+
+## Small project, open to contributions
+
+Shared as-is for people who find it useful. Current verification is on
+Windows/Python 3.12: **276 tests passed, 2 platform skips**, plus package-install
+checks. Other environments and independent-user setups are not yet verified.
+Feedback, fixes and reports from other setups are welcome; broad platform
+certification is not promised. The repository is currently private.
+
+[MIT license](LICENSE) · [Contributing](CONTRIBUTING.md) ·
+[Security](SECURITY.md) · [Roadmap](ROADMAP.md)

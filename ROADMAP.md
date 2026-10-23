@@ -66,7 +66,16 @@ or acceptance of every live operation. No user's account approval transfers.
   original remains a separately named private, read-only archive. A pre-cleanup
   commit returns HTTP 404 in the replacement. See the audit report.
 
-## Remaining release work
+## Community scope — 2026-10-24
+
+This is a small, as-is project for interested users, not a broadly certified
+product. README now leads with useful workflows and human/agent entry points.
+The maintainer is not committing to testing every platform or user environment.
+Checks below remain accurately unverified and are welcome future contributions;
+they are not prerequisites for sharing the existing code. Privacy review and
+explicit owner approval still apply before changing repository visibility.
+
+## Optional improvements and remaining publication step
 
 - [ ] CI for offline tests, package installation and the chosen support matrix.
 - [ ] Independent clean-machine/new-user read-only OAuth acceptance.

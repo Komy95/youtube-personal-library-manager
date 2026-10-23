@@ -4,6 +4,12 @@ Updated 2026-10-24. Repository remains private. Source license: [MIT](../LICENSE
 [Plan](OPEN_SOURCE_PLAN.md) · [Project roadmap](../ROADMAP.md) ·
 [Distribution audit](DISTRIBUTION_AUDIT.md)
 
+Scope clarification (2026-10-24): this is a small community repository shared
+as-is. CI, independent-user/agent acceptance and additional platform testing
+below are optional improvements, not required maintainer commitments or gates
+for sharing the current code. They remain unchecked because they are unverified.
+Publication still needs owner approval and accurate privacy/license/scope claims.
+
 ## M0 — Reusable source baseline
 
 - [x] Working Python gateway and synthetic offline tests in Git.
@@ -49,7 +55,7 @@ Updated 2026-10-24. Repository remains private. Source license: [MIT](../LICENSE
 - [ ] Add maintained dependency/secret checks to CI without live account fixtures.
 - [ ] Confirm required checks against the exact release candidate.
 
-## M5 — Release acceptance
+## M5 — Optional community acceptance
 
 - [ ] Decide initial scope: read-only, or clearly labeled advanced writes.
 - [ ] For advanced writes, complete separately approved disposable-playlist

@@ -74,8 +74,10 @@ General rename/reorder interfaces and whole-playlist deletion remain deferred.
 
 ## Release decision
 
-Keep the repository private until the candidate's audit, required CI,
-installation, documentation and scoped acceptance pass. Present the exact
-candidate and known limits to the owner for publication approval. Then change
-visibility, verify it, tag the reviewed version and publish release notes.
-No maintainer hosting or domain setup is involved.
+Share the repository as a small, as-is community project using the current
+verified Windows baseline and clearly stated limits. CI, independent-user/agent
+walkthroughs and additional-platform testing are optional contributions, not
+maintainer commitments or publication prerequisites. Do not claim those checks
+have passed. Present the audited candidate and known limits to the owner for
+publication approval, then change visibility and verify it. Tags/release notes
+can be added when useful. No hosting or domain setup is involved.
