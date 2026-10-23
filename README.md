@@ -6,7 +6,8 @@ only a plan you approve. No hosted service or model runtime is required.
 
 **Private preparation:** cloning currently requires repository access. The code
 has offline coverage; independent new-user setup,
-public-release cleanup and cross-platform acceptance remain open.
+CI and cross-platform acceptance remain open. Distribution cleanup and the
+license audit are recorded in [the audit report](docs/DISTRIBUTION_AUDIT.md).
 
 ## Start here
 
