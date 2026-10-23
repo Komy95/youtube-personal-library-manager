@@ -46,6 +46,17 @@ This report is not publication or account-write approval.
 
 ## Retention boundary
 
+Privacy recheck (2026-10-24): reviewed all four published commits through
+`826e0cb` and 55 distinct tracked text blobs, including author/committer metadata.
+No known private name/email/path/operation markers or email addresses in file
+content were found. Fresh-clone file and full-history Gitleaks scans again had
+no findings. Commit attribution uses the owner's public GitHub username and
+GitHub noreply identity; the clone URL also identifies the repository owner.
+The repository had only `main`, no tags, issues/pull requests, releases or Actions
+workflows. Both the clean repository and the separate archived original were
+confirmed private. Ignored local recovery/tool state and the private archive are
+outside the distribution and intentionally retain historical records.
+
 The owner selected a clean replacement repository, with the original retained
 as a separately named private archive, to avoid carrying old Git objects into
 the future public repository. The archive must remain private. Local recovery

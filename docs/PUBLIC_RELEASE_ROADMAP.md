@@ -64,7 +64,9 @@ Publication still needs owner approval and accurate privacy/license/scope claims
 
 ## M6 — Publication
 
-- [ ] Final history/privacy/license review and exact candidate approval.
+- [x] Repeat history/privacy/license review of the clean distribution; no private
+  personal-record or secret findings. Public ownership/noreply attribution remains.
+- [ ] Owner approval to publish the exact candidate as a small, as-is project.
 - [ ] Change visibility only after owner approval; verify public state.
 - [ ] Tag reviewed version and publish setup/scope/recovery release notes.
 

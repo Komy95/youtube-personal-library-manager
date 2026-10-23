@@ -68,6 +68,11 @@ or acceptance of every live operation. No user's account approval transfers.
 
 ## Community scope — 2026-10-24
 
+Privacy recheck completed: fresh-clone files and all published history passed
+Gitleaks again; manual text/author/metadata review found no private personal
+records. Public GitHub ownership/noreply attribution remains. The separate
+historical archive is private. Findings are recorded in the distribution audit.
+
 This is a small, as-is project for interested users, not a broadly certified
 product. README now leads with useful workflows and human/agent entry points.
 The maintainer is not committing to testing every platform or user environment.
